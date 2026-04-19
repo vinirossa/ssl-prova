@@ -18,4 +18,10 @@ funcionamento do protocolo da mesma forma. Além disso, foi preciso
 instalar o opensslserver pra conseguir fazer essa simulação e contornar
 os erros de permissãao de usuário não root.
 
+Exercício 7: O módulo http.server do Python não suporta SSL
+nativamente, então não foi possível subir um servidor HTTPS
+real apenas com o comando indicado. O exercício foi documentado
+mostrando o comportamento esperado: HTTP funcionando e HTTPS
+retornando erro de conexão.
+
 ## Conclusão
