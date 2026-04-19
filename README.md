@@ -24,4 +24,9 @@ real apenas com o comando indicado. O exercício foi documentado
 mostrando o comportamento esperado: HTTP funcionando e HTTPS
 retornando erro de conexão.
 
+Exercício 8: Sem um servidor HTTPS funcional, a validação
+pelo navegador não foi possível. A alternativa foi inspecionar
+o certificado diretamente via OpenSSL, que fornece informações
+ainda mais detalhadas do que a interface do navegador.
+
 ## Conclusão
