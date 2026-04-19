@@ -30,3 +30,19 @@ o certificado diretamente via OpenSSL, que fornece informações
 ainda mais detalhadas do que a interface do navegador.
 
 ## Conclusão
+
+A tarefa cobriu o fluxo completo de criação e uso de certificados
+digitais: desde a instalação do OpenSSL até a geração da chave privada,
+CSR e certificado auto-assinado, passando pela transferência segura via
+SCP e a tentativa de subir um servidor HTTPS.
+
+O ambiente WSL2 trouxe algumas limitações práticas - principalmente na
+parte do SCP (sem segunda máquina disponível) e no servidor HTTPS (o
+http.server do Python não suporta SSL nativamente) - mas essas situações
+ajudaram a entender melhor o que cada ferramenta faz e onde ela se aplica
+de verdade.
+
+No geral, ficou claro como as peças se conectam: a chave privada fica
+guardada com segurança, o certificado é o que se compartilha com o mundo,
+e sem um servidor configurado corretamente para usar esses arquivos, o
+HTTPS simplesmente não funciona.
